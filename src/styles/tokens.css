@@ -1,0 +1,79 @@
+/* Design tokens derived from the current Benefits mobile screens. */
+
+:root {
+  /* Surfaces */
+  --surface-page: #ffffff;
+  --surface-band: #eaebe8;
+  --surface-subpage: #f2f3f1;
+  --surface-card: #ffffff;
+  --surface-card-tint: #eff3f4;
+  --surface-chip: #edeeec;
+  --surface-input: #ffffff;
+
+  /* Brand + accent */
+  --green-primary: #0e7c66;
+  --green-deep: #00473c;
+  --green-mid: #12a58a;
+  --teal: #00b3a6;
+  --mint-tile: #a8f0d8;
+  --mint-soft: #d9f7ec;
+  --coral: #f2917d;
+  --lime: #d9f26b;
+
+  /* Text */
+  --text-primary: #1a1a1a;
+  --text-secondary: #5c5f5e;
+  --text-muted: #767a78;
+  --text-inverse: #ffffff;
+  --text-link: #0e7c66;
+
+  /* Status */
+  --status-approved: #0e9384;
+  --status-pending: #12a58a;
+  --status-denied: #d92d20;
+  --status-warning: #b54708;
+  --surface-alert: #fef4ec;
+  --border-alert: #f3b98a;
+  --surface-info: #eaf6f3;
+
+  /* Lines */
+  --border-subtle: #e2e4e1;
+  --border-strong: #b9bdba;
+  --track: #d5d8d5;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+  --radius-phone: 34px;
+
+  /* Elevation */
+  --shadow-card: 0 1px 3px rgba(16, 24, 40, 0.08), 0 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-raised: 0 4px 12px rgba(16, 24, 40, 0.1);
+  --shadow-phone: 0 24px 60px rgba(16, 24, 40, 0.24);
+
+  /* Spacing rhythm (8px base, 16px gutters) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --gutter: 16px;
+
+  /* Type scale */
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  --text-display: 28px;
+  --text-title: 22px;
+  --text-section: 17px;
+  --text-card-title: 15px;
+  --text-body: 14px;
+  --text-small: 13px;
+  --text-tiny: 11px;
+
+  /* Tap targets */
+  --tap-min: 44px;
+}

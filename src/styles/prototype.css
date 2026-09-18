@@ -1,0 +1,359 @@
+/* The prototype chrome that lives outside the phone: header, scenario rail, device frame. */
+
+.proto {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-5) var(--space-7);
+}
+
+.proto__head {
+  padding: 0 var(--space-1);
+}
+
+.proto__kicker {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-tiny);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green-primary);
+}
+
+.proto__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.proto__intro {
+  margin: var(--space-3) 0 0;
+  font-size: var(--text-body);
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.proto__body {
+  display: grid;
+  grid-template-columns: minmax(300px, 380px) 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.proto__stage {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: var(--space-5);
+}
+
+/* ---------- Scenario rail ---------- */
+
+.rail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+}
+
+.panel__title {
+  margin: 0;
+  font-size: var(--text-section);
+  font-weight: 700;
+}
+
+.panel__hint {
+  margin: var(--space-2) 0 var(--space-4);
+  font-size: var(--text-small);
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.scenario-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.scenario {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding: var(--space-3);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.scenario:hover {
+  border-color: var(--border-strong);
+}
+
+.scenario--active {
+  border-color: var(--green-primary);
+  background: var(--surface-info);
+  box-shadow: inset 0 0 0 1px var(--green-primary);
+}
+
+.scenario input {
+  margin: 3px 0 0;
+  accent-color: var(--green-primary);
+  flex: none;
+}
+
+.scenario__name {
+  display: block;
+  font-size: var(--text-body);
+  font-weight: 700;
+}
+
+.scenario__summary {
+  display: block;
+  margin-top: 2px;
+  font-size: var(--text-small);
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  font-size: var(--text-small);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toggle input {
+  accent-color: var(--green-primary);
+  width: 16px;
+  height: 16px;
+}
+
+.toggle__hint {
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-small);
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+/* ---------- Why panel ---------- */
+
+.why__signals {
+  list-style: none;
+  margin: 0 0 var(--space-4);
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.why__signal {
+  font-size: var(--text-tiny);
+  font-weight: 600;
+  padding: 4px 9px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-info);
+  color: var(--green-deep);
+}
+
+.why__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: why;
+}
+
+.why__item {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.why__item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.why__rank {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--surface-chip);
+  font-size: var(--text-tiny);
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.why__name {
+  margin: 0;
+  font-size: var(--text-body);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.why__reason {
+  margin: 2px 0 0;
+  font-size: var(--text-small);
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-chip);
+  color: var(--text-secondary);
+}
+
+.badge--new {
+  background: #e7f4ef;
+  color: var(--green-deep);
+}
+
+.badge--up {
+  background: #eaf1fb;
+  color: #1c4e9c;
+}
+
+.badge--down {
+  background: #f3f0ea;
+  color: #7a5c22;
+}
+
+/* ---------- Device ---------- */
+
+.phone {
+  width: 422px;
+  max-width: 100%;
+  border-radius: var(--radius-phone);
+  padding: 16px;
+  background: #1f2320;
+  box-shadow: var(--shadow-phone);
+}
+
+.phone__screen {
+  width: 100%;
+  height: 780px;
+  max-height: calc(100vh - 92px);
+  min-height: 560px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: var(--surface-page);
+  display: flex;
+  flex-direction: column;
+}
+
+.phone__status {
+  flex: none;
+  height: 34px;
+  padding: 0 var(--space-5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-size: var(--text-small);
+  font-weight: 600;
+}
+
+.phone__indicators {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.phone__scroll {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+
+.phone__tabs {
+  flex: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--border-subtle);
+  background: var(--surface-page);
+  padding: var(--space-2) 0 var(--space-4);
+}
+
+.phone__tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.phone__tab--active {
+  color: var(--green-deep);
+  font-weight: 700;
+}
+
+/* ---------- Annotations ---------- */
+
+.annotate {
+  position: relative;
+}
+
+.annotate__badge {
+  position: absolute;
+  top: -8px;
+  right: var(--gutter);
+  z-index: 2;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.16);
+}
+
+@media (max-width: 840px) {
+  .proto {
+    padding: var(--space-5) var(--space-4) var(--space-6);
+  }
+
+  .proto__body {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .proto__stage {
+    position: static;
+  }
+
+  .phone {
+    padding: 10px;
+    border-radius: 26px;
+  }
+
+  .phone__screen {
+    height: 720px;
+    max-height: none;
+  }
+}
